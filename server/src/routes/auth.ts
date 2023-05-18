@@ -10,7 +10,7 @@ export async function authRotes(app: FastifyInstance) {
     })
 
     const { code } = bodySchema.parse(request.body)
-    console.log(code)
+    console.log('user code' + code)
 
     const acessTokenResponse = await axios.post(
       'https://github.com/login/oauth/access_token',
@@ -65,6 +65,8 @@ export async function authRotes(app: FastifyInstance) {
       { sub: user.id, expiresIn: '30 days' },
     )
 
-    return token
+    console.log(token)
+
+    return { token }
   })
 }
