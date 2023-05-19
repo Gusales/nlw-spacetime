@@ -19,7 +19,7 @@ import * as SecureStore from 'expo-secure-store'
 const StyledStribe = styled(Stribes)
 
 export default function Layout() {
-  const [isUserAuth, setIsUseAuth] = useState<null | boolean>(null)
+  const [isUserAuth, setIsUseAuth] = useState(false)
 
   const [hasLoadedFonts] = useFonts({
     Roboto_400Regular,
@@ -53,8 +53,8 @@ export default function Layout() {
         }}
       >
         <Stack.Screen name="index" redirect={isUserAuth} />
-        <Stack.Screen name="newMemorie" />
         <Stack.Screen name="memories" />
+        <Stack.Screen name="newMemorie" />
       </Stack>
     </ImageBackground>
   )
