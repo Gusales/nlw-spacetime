@@ -1,4 +1,4 @@
-# Cápsula do Tempo || NLW Spacetime
+# <h1 align="center"> Cápsula do Tempo || NLW Spacetime </h1>
 
 <p align="center"> Esta aplicação consiste em uma máquina do tempo, onde o usuário podera guardar memórias passadas em uma timeline. Esta aplicação foi construida ao longo do evento NLW Spacetime </p>
 
