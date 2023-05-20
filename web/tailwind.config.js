@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'var(--font-roboto)',
+        body: 'var(--font-roboto)',
         alt: 'var(--font-baijam)',
       },
       colors: {
@@ -61,5 +61,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/forms'), require('tailwind-scrollbar')],
 }

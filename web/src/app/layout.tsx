@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${roboto.variable} ${baijam.variable} bg-gray-900 font-sans text-gray-100`}
+        className={`${roboto.variable} ${baijam.variable} bg-gray-900 font-body text-gray-100`}
       >
         <main className="grid min-h-screen grid-cols-2">
           {/* Left */}
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </section>
 
           {/* Right */}
-          <section className="flex max-h-screen flex-col overflow-y-scroll bg-[url(../assets/bg-stars.svg)] bg-cover">
+          <section className=" scroll flex max-h-screen flex-col overflow-y-scroll bg-[url(../assets/bg-stars.svg)] bg-cover scrollbar-thin scrollbar-thumb-purple-400 ">
             {children}
           </section>
         </main>
